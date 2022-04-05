@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,SAAS,EAAE,MAAM;EACjB,aAAa,EAAE,IAAI;EACnB,cAAc,EAAE,IAAI;CACvB",
+    "sources": [
+        "GridLayout.scss"
+    ],
+    "names": [],
+    "file": "GridLayout.css"
+}
