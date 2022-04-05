@@ -3,3 +3,56 @@
     margin-inline: auto;
     padding-inline: 2rem;
 }
+
+.stacked {
+    display: grid;
+}
+
+.stacked > * {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: .25rem;
+}
+
+.card {
+    aspect-ratio: 1/1.5;
+}
+
+.card__content {
+    background-color: antiquewhite;
+    align-self: end;
+    margin: .5rem .5rem 2rem;
+    padding: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.card__img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.card__title {
+    font-size: 1.25rem;
+    line-height: 1.1;
+    color: firebrick
+}
+
+.card__price {
+    font-size: 1.75rem;
+}
+
+@media (min-width: 60rem) {
+    .card.featured{
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+    
+    .card.featured .card__img{
+        aspect-ratio: 1 / 1.25;
+    }
+}
